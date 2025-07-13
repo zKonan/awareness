@@ -18,12 +18,26 @@ body, html {
   height: 100%;
 }
 
+@keyframes breathe {
+  0% {
+    opacity: 0;
+  }
+  28.57% {
+    opacity: 1;
+  }
+  57.14% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .message {
   color: #fff;
-  font-size: 50px;  /* increased font size */
+  font-size: 50px;
   text-align: center;
-  opacity: 0.8;
-  transition: opacity 1s ease;
+  animation: breathe 14s infinite;
 }
 
 .hidden {
