@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.message {
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  opacity: 0.8;
+  transition: opacity 1s ease;
+}
+
+.hidden {
+  opacity: 0;
+}

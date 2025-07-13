@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Presence Space</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="center">
+    <p class="message">Notice the space before words.</p>
+  </div>
+
+  <!-- Optional ambient sound -->
+  <audio id="ambientSound" autoplay loop>
+    <source src="ambient.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    // Tap anywhere to toggle visibility of message
+    document.body.addEventListener("click", () => {
+      const msg = document.querySelector('.message');
+      msg.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
