@@ -22,7 +22,7 @@ body, html {
   0% {
     opacity: 0;
   }
-  35.29% {  /* 6s fade in */
+  35.29% {  /* 6s fade in (of 17s total) */
     opacity: 1;
   }
   52.93% {  /* 3s hold */
@@ -35,12 +35,15 @@ body, html {
 
 .message {
   color: #fff;
-  font-size: 36px;
+  font-size: 50px;
+  font-weight: 400;
+  letter-spacing: -0.3px;
   text-align: center;
   animation: breathe 17s infinite ease-in-out;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 0 0 1px rgba(0,0,0,0.4); /* softens it a bit */
 }
 
 .hidden {
   opacity: 0;
 }
-
