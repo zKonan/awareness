@@ -22,22 +22,22 @@ body, html {
   0% {
     opacity: 0;
   }
-  28.57% {
+  42.85% {  /* 6s fade in */
     opacity: 1;
   }
-  57.14% {
+  71.42% {  /* 4s hold */
     opacity: 1;
   }
-  100% {
+  100% {    /* 4s fade out */
     opacity: 0;
   }
 }
 
 .message {
   color: #fff;
-  font-size: 36px;
+  font-size: 50px;
   text-align: center;
-  animation: breathe 14s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  animation: breathe 14s infinite ease-in-out;
 }
 
 .hidden {
