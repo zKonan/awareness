@@ -34,11 +34,10 @@ body, html {
 }
 
 .message {
-  animation: breathe 14s infinite ease-in-out;
   color: #fff;
   font-size: 36px;
   text-align: center;
-  animation: breathe 14s infinite;
+  animation: breathe 14s infinite cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hidden {
